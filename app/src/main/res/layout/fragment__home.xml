@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Fragment_Home">
+
+    <!-- TODO: Update blank fragment layout -->
+
+        <TextView
+            android:id="@+id/Home"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="HOME "
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <TextView
+        android:id="@+id/TextNama"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Home"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Hallo, akbar" />
+
+
+        <ImageButton
+            android:id="@+id/btnlogout"
+            android:layout_width="72dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:text="logout"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"/>
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvBuku"
+            android:layout_below="@+id/TextNama"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            tools:listitem="@layout/item_list" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fbAddBuku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:contentDescription="add_Buku"
+        android:src="@drawable/ic_baseline_add_24" />
+
+
+</RelativeLayout>

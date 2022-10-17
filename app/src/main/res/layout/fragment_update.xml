@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Fragment_update">
+
+
+    <EditText
+        android:id="@+id/etNameBuku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="JUdul"
+
+        />
+
+    <EditText
+        android:id="@+id/ettahun"
+        android:layout_below="@id/etNameBuku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tahun"
+
+        />
+
+    <EditText
+        android:id="@+id/etDescBuku"
+        android:layout_below="@id/ettahun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+
+        />
+
+    <EditText
+        android:id="@+id/etImageBuku"
+        android:layout_below="@id/etDescBuku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Image Link"
+
+        />
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_below="@id/etImageBuku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:textAllCaps="false"
+        />
+
+
+
+</RelativeLayout>

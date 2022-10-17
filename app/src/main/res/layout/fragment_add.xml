@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.Fragment_add">
+
+    <ImageView
+        android:id="@+id/ivGoHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:layout_margin="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0"/>
+
+    <LinearLayout
+        android:id="@+id/llAddFilm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="add_Buku"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/etAddNameBuku"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Judul"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_margin="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" />
+
+        <EditText
+            android:id="@+id/etAddTahun"
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:layout_margin="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_height="wrap_content"
+            android:hint="Tahun"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/etAddDescBuku"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:paddingLeft="10dp"
+            android:layout_margin="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:gravity="top"
+            android:hint="description"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etAddNImageBuku"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="image"
+
+            android:textSize="18sp"
+
+            android:layout_margin="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/tvuplod"/>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

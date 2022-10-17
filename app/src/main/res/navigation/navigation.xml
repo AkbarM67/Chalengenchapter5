@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragment_plash">
+
+    <fragment
+        android:id="@+id/fragment_login"
+        android:name="com.example.chalengenchapter5.Fragment.Fragment_login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_fragment_login_to_fragment_Registrasi"
+            app:destination="@id/fragment_Registrasi" />
+        <action
+            android:id="@+id/action_fragment_login_to_fragment_home"
+            app:destination="@id/fragment_home" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_Registrasi"
+        android:name="com.example.chalengenchapter5.Fragment.Fragment_Registrasi"
+        android:label="fragment__registrasi"
+        tools:layout="@layout/fragment__registrasi" >
+        <action
+            android:id="@+id/action_fragment_Registrasi_to_fragment_login"
+            app:destination="@id/fragment_login" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_add"
+        android:name="com.example.chalengenchapter5.Fragment.Fragment_add"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_fragment_add_to_fragment_Home"
+            app:destination="@id/fragment_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_delete_dialog"
+        android:name="com.example.chalengenchapter5.Fragment.Fragment_delete_dialog"
+        android:label="fragment_delete_dialog"
+        tools:layout="@layout/fragment_delete_dialog" >
+        <action
+            android:id="@+id/action_fragment_delete_dialog_to_fragment_Home"
+            app:destination="@id/fragment_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_detail"
+        android:name="com.example.chalengenchapter5.Fragment.Fragment_detail"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/action_fragment_detail_to_fragment_delete_dialog"
+            app:destination="@id/fragment_delete_dialog" />
+        <action
+            android:id="@+id/action_fragment_detail_to_fragment_update"
+            app:destination="@id/fragment_update" />
+        <action
+            android:id="@+id/action_fragment_detail_to_fragment_home"
+            app:destination="@id/fragment_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_update"
+        android:name="com.example.chalengenchapter5.Fragment.Fragment_update"
+        android:label="fragment_update"
+        tools:layout="@layout/fragment_update" >
+        <action
+            android:id="@+id/action_fragment_update_to_fragment_Home"
+            app:destination="@id/fragment_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_home"
+        android:name="com.example.chalengenchapter5.Fragment.Fragment_Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment__home" >
+        <action
+            android:id="@+id/action_fragment_Home_to_fragment_add"
+            app:destination="@id/fragment_add" />
+        <action
+            android:id="@+id/action_fragment_Home_to_fragment_login"
+            app:destination="@id/fragment_login" />
+        <action
+            android:id="@+id/action_fragment_Home_to_fragment_detail"
+            app:destination="@id/fragment_detail" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_plash"
+        android:name="com.example.chalengenchapter5.Fragment.Fragment_plash"
+        android:label="fragment_plash"
+        tools:layout="@layout/fragment_plash" >
+        <action
+            android:id="@+id/action_fragment_plash_to_fragment_login"
+            app:destination="@id/fragment_login" />
+        <action
+            android:id="@+id/action_fragment_plash_to_fragment_home"
+            app:destination="@id/fragment_home" />
+    </fragment>
+</navigation>
